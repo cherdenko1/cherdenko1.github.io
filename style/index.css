@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+}
+
+@font-face {
+    font-family: louisgeorgecafe;
+    src: url(font/louis-george-cafe.ttf);
+}
+
+@font-face {
+    font-family: roundedElegance;
+    src: url(font/rounded-elegance.ttf);
+}
+
+@font-face {
+    font-family: creatoDisplayRegular;
+    src: url(font/CreatoDisplay-Regular.otf);
+}
+
+body {
+
+    background: #1d2026;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    font-family: creatoDisplayRegular;
+
+    display: grid;
+    grid-template-rows: 80px minmax(88vh, auto);
+}
+
+nav {
+    z-index: 1;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+nav > .title {
+
+    padding: 10px;
+    padding-left: 20px;
+
+    font-family: louisgeorgecafe;
+}
+
+nav > .title > h1 {
+
+    font-size: 3em;
+    font-family: louisgeorgecafe;
+    color: rgb(73, 73, 234);
+}
+
+nav > .links {
+    
+    padding-top: 30px;
+}
+
+nav > .links > * {
+
+    margin-left: 40px;
+    font-family: creatoDisplayRegular;
+    font-size: 20px;
+}
+
+
+main {
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 20px;
+}
+
+.profile-image > img{
+
+    display: block;
+    width: 55%;
+    height: 55%;
+    border-radius: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.profile-info {
+
+    padding-top: 5%;
+}
+
+.profile-info > h1 {
+    
+    padding-bottom: 5px;
+}
