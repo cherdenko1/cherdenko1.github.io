@@ -75,8 +75,8 @@ main {
 .profile-image > img{
 
     display: block;
-    width: 55%;
-    height: 55%;
+    width: 360px;
+    height: 360px;
     border-radius: 100%;
 
     margin-left: auto;
