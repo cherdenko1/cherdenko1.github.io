@@ -31,21 +31,27 @@
 
             }
 
-            .main-container * {
-                margin: 10px;
+            .main-container{
+                padding: 30px;
             }
 
             .form {
-                display: flex;
-                flex-direction: column;
-
+                margin-top: 15px;
             }
 
             input {
-                width: 80%;
                 border-radius: 10px;
                 border: 2px solid #34be5b;
+                width: 80%;
+                padding: 2px;
             }
+
+            .name {
+                display: grid;
+                grid-template-columns: 40% 30% 30%;
+                width: 100%;
+            }
+
 
             /*Phone Screen*/
             @media screen and (max-width: 1080px) {
@@ -60,13 +66,17 @@
 
                 .main-container {
                     padding: 20px;
-                    top: 12%;
+                    top: 15%;
                 }
 
                 input {
                     width: auto;
                     height: 70px;
-                    font-size: 50px;
+                    font-size: 40px;
+                }
+
+                .name {
+                    grid-template-columns: auto;
                 }
             }
         </style>
@@ -76,8 +86,20 @@
         <div class="main-container">
             <h1 style="text-align:center">Registration Form</h1>
             <form class="form">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname">
+                <div class="name">
+                    <div>
+                        <label for="fname">First Name</label> <br />
+                        <input type="text" id="fname" name="firstname">
+                    </div>
+                    <div>
+                        <label for="mname">Middle Name</label> <br />
+                        <input type="text" id="mname" name="middlename">
+                    </div> 
+                    <div>
+                        <label for="lname">Last Name</label> <br />
+                        <input type="text" id="lname" name="lastname">
+                    </div> 
+                </div>
             </form>
         </div>
     </body>
