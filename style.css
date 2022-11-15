@@ -1,0 +1,71 @@
+* {
+    margin: 2px;
+}
+
+
+.logo {
+
+    width: 150px;
+    height: 100px;
+}
+
+.main-container {
+
+    width: 80%;
+}
+
+header {
+
+    display: flex;
+}
+
+.credentials {
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.year-table {
+
+    margin-top: 20px;
+}
+
+.year-label {
+
+    width: 100%;
+    color: white;
+    background-color: rgb(85, 135, 85);
+    text-align: center;
+}
+
+.curriculum {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.year {
+
+    display: flex;
+    flex-direction: row;
+}
+
+table, th, td {
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 12px;
+    
+}
+
+table {
+
+    width: 85%;
+}
+
+#first-year {
+
+    background-color: rgb(68, 105, 68);
+    color: white;
+}
