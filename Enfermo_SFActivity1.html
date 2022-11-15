@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <style>
+            :root {
+                --default_color: rgb(43, 134, 92);
+                --default_color_darker: rgb(35, 85, 62);
+            }
+            * {
+                margin: 0px;
+            }
+
+            html {
+                font-family: sans-serif;
+            }
+
+            h1 {
+                color: var(--default_color);
+            }
+
+            input {
+                border: 1.8px solid var(--default_color);
+                border-radius: 10px;
+
+                padding: 0px 6px;
+            }
+
+            a {
+                color: var(--default_color);
+                text-decoration: none;
+            }
+
+            .main-form {
+                width: fit-content;
+                height: fit-content;
+
+                position: absolute;
+                left: 50%;
+                top: 1%;
+                transform: translate(-50%, 0);
+
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+
+                padding: 30px 50px;
+
+                border-radius: 20px;
+                box-shadow: 2px 5px 20px 1px rgb(204, 204, 204);
+                
+            }
+            .main-form > h1 {
+                text-align: center;
+            }
+            .field-container {
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+            }
+            #fname {
+                width: 200px;
+            }
+            #mname, #lname {
+                width: 130px;
+            }
+            #house {
+                width: 120px;
+            }
+            #street, #city {
+                width: 200px;
+            }
+            #brgy {
+                width: 140px;
+            }
+            #region {
+                width: 110px;
+            }
+            #country {
+                width: 150px;
+            }
+            #phone, #email {
+                width: 240px;
+            }
+            .submit {
+                border: none;
+                border-radius: 16px;
+                padding: 5px 10px;
+
+                color: white;
+                background-color: var(--default_color);
+
+                width: 80%;
+            }
+            .submit:hover {
+                color: white;
+                background-color: var(--default_color_darker);
+            }
+            .reset {
+                border: none;
+                border-radius: 16px;
+                padding: 5px 10px;
+
+                color: white;
+                background-color: rgb(255, 29, 29);
+
+                width: 20%;
+            }
+            .reset:hover {
+                color: white;
+                background-color: rgb(199, 16, 16);
+            }
+            input[type=file] {
+                border-radius: 2px;
+                border: none;
+            }
+            input[type=submit]:hover, input[type=reset]:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form class="main-form">
+            <h1>Registration Form</h1>
+            
+            <div class="field-container">
+                <div class="field">
+                    <label for="fname">First Name</label> <br>
+                    <input type="text" id="fname" name="first_name">
+                </div>
+                <div class="field">
+                    <label for="mname">Middle Name</label> <br>
+                    <input type="text" id="mname" name="middle_name">
+                </div>
+                <div class="field">
+                    <label for="lname">Last Name</label> <br>
+                    <input type="text" id="lname" name="lname_name">
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="field">
+                    <label for="bdate">Birthdate</label> <br>
+                    <input type="date" id="bdate" name="birth_date">
+                </div>
+
+                <div class="field-radio">
+                    <div>Gender</div>
+                    <div class="field">
+                        <input type="radio" id="male" name="gender"> <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender"> <label for="female">Female</label>
+                        <input type="radio" id="unknown" name="gender"> <label for="unknown">Unknown/Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="field">
+                    <div>Marital Status</div>
+                    <input type="radio" id="single" name="status"> <label for="single">Single</label>
+                    <input type="radio" id="married" name="status"> <label for="married">Married</label>
+                    <input type="radio" id="divorced" name="status"> <label for="divorced">Divorced</label>
+                    <input type="radio" id="widowed" name="status"> <label for="widowed">Widowed</label>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="field">
+                    <label for="phone">Phone Number</label> <br>
+                    <input type="tel" id="phone" name="phone_number">
+                </div>
+                <div class="field">
+                    <label for="email">E-mail</label> <br>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="field-container">Address</div>
+
+            <div class="field-container">
+                <div class="field">
+                    <label for="house">House</label> <br>
+                    <input type="text" id="house" name="house">
+                </div>
+                <div class="field">
+                    <label for="street">Street</label> <br>
+                    <input type="text" id="street" name="street">
+                </div>
+                <div class="field">
+                    <label for="brgy">Barangay</label> <br>
+                    <input type="text" id="brgy" name="barangay">
+                </div>
+            </div>
+            <div class="field-container">
+                <div class="field">
+                    <label for="city">Municipality / City</label> <br>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="field">
+                    <label for="region">Region</label> <br>
+                    <input type="text" id="region" name="region">
+                </div>
+                <div class="field">
+                    <label for="country">Country</label> <br>
+                    <input type="text" id="country" name="country">
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="field">
+                    <input type="checkbox" id="website" name="personal-website">
+                    <label for="website">Do you have a website? If yes, then type: </label>
+                    <input type="url" name="website-url">
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="field">
+                    <label for="profile">Profile Picture</label> <br>
+                    <input type="file" id="profile" name="profile">
+                </div>
+                <div class="field">
+                    <label for="wellbeing">How are you feeling?</label> <br>
+                    <input type="range" id="wellbeing" name="wellbeing">
+                </div>
+            </div>
+
+            <div class="field-container">
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement">By clicking this, I agree to the <a href="#">Terms and Conditions</a>.</label>
+            </div>
+
+            <div class="field-container">
+                <input type="submit" class="submit" value="Submit">
+                <input type="reset" class="reset" value="Clear">
+            </div>
+        </form>
+
+    </body>
+</html>
